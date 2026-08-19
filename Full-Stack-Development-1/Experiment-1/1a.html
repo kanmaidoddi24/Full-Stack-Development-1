@@ -1,79 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fruits and Vegetables</title>
+    <title>Different Types of Lists</title>
 </head>
 
 <body>
 
-    <h1>Fruits and Vegetables</h1>
+    <h1>Different Types of HTML Lists</h1>
+    <h2>1. Ordered List</h2>
 
-    <h2>Fruits</h2>
+    <ol>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+    </ol>
+    <h2>2. Unordered List</h2>
+
     <ul>
-        <li onclick="showDetails('Apple')">Apple</li>
-        <li onclick="showDetails('Banana')">Banana</li>
-        <li onclick="showDetails('Mango')">Mango</li>
-        <li onclick="showDetails('Orange')">Orange</li>
+        <li>Carrot</li>
+        <li>Potato</li>
+        <li>Tomato</li>
     </ul>
+    <h2>3. Nested List</h2>
 
-    <h2>Vegetables</h2>
     <ul>
-        <li onclick="showDetails('Tomato')">Tomato</li>
-        <li onclick="showDetails('Potato')">Potato</li>
-        <li onclick="showDetails('Carrot')">Carrot</li>
-        <li onclick="showDetails('Spinach')">Spinach</li>
+        <li>Fruits
+            <ol>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mango</li>
+            </ol>
+        </li>
+
+        <li>Vegetables
+            <ol>
+                <li>Carrot</li>
+                <li>Potato</li>
+                <li>Tomato</li>
+            </ol>
+        </li>
     </ul>
+    <h2>4. Description List</h2>
 
-    <h2>Details</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
 
-    <p id="details">Click on any fruit or vegetable to see its details.</p>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
 
-    <script>
-
-        function showDetails(item) {
-
-            if (item == "Apple") {
-                document.getElementById("details").innerHTML =
-                "Apple: Rich in fiber and vitamin C. It is good for digestion.";
-
-            }
-            else if (item == "Banana") {
-                document.getElementById("details").innerHTML =
-                "Banana: Rich in potassium and provides instant energy.";
-
-            }
-            else if (item == "Mango") {
-                document.getElementById("details").innerHTML =
-                "Mango: A sweet fruit rich in vitamins A and C.";
-
-            }
-            else if (item == "Orange") {
-                document.getElementById("details").innerHTML =
-                "Orange: Rich in vitamin C and helps support immunity.";
-
-            }
-            else if (item == "Tomato") {
-                document.getElementById("details").innerHTML =
-                "Tomato: Rich in vitamins and antioxidants. It is commonly used in cooking.";
-
-            }
-            else if (item == "Potato") {
-                document.getElementById("details").innerHTML =
-                "Potato: A carbohydrate-rich vegetable and a good source of energy.";
-
-            }
-            else if (item == "Carrot") {
-                document.getElementById("details").innerHTML =
-                "Carrot: Rich in beta-carotene and good for eye health.";
-
-            }
-            else if (item == "Spinach") {
-                document.getElementById("details").innerHTML =
-                "Spinach: A leafy green vegetable rich in iron and vitamins.";
-            }
-        }
-
-    </script>
+        <dt>JavaScript</dt>
+        <dd>A scripting language for web pages</dd>
+    </dl>
 
 </body>
 </html>
