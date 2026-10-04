@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+
+    <style>
+
+        
+        p {
+            color: blue;
+        }
+
+        /* ID selector */
+        #heading {
+            color: red;
+        }
+
+        /* Class selector */
+        .box {
+            background-color: lightgreen;
+        }
+
+        h2, h3 {
+            color: purple;
+        }
+
+
+        * {
+            font-family: Arial;
+        }
+        div p {
+            color: orange;
+        }
+
+    
+        div > span {
+            color: green;
+        }
+
+        h4 + p {
+            background-color: yellow;
+        }
+        h5 ~ p {
+            color: brown;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        p::first-letter {
+            font-size: 30px;
+        }
+
+        input[type="text"] {
+            background-color: lightyellow;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 id="heading">CSS Selector Forms</h1>
+
+    <h2>Simple Selectors</h2>
+
+    <p>This is an element selector.</p>
+
+    <p class="box">This is a class selector.</p>
+
+
+    <h3>Combinator Selectors</h3>
+
+    <div>
+        <p>This is a descendant selector.</p>
+
+        <span>This is a child selector.</span>
+    </div>
+
+    <h4>Adjacent Sibling</h4>
+    <p>This paragraph is an adjacent sibling.</p>
+
+    <h5>General Sibling</h5>
+    <p>This is a general sibling.</p>
+    <p>This is another general sibling.</p>
+
+
+    <h3>Pseudo-class Selector</h3>
+
+    <a href="#">Move mouse over this link</a>
+
+
+    <h3>Pseudo-element Selector</h3>
+
+    <p>This paragraph demonstrates the first-letter pseudo-element.</p>
+
+
+    <h3>Attribute Selector</h3>
+
+    <input type="text" placeholder="Enter your name">
+
+</body>
+</html>
